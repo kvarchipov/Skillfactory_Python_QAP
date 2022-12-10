@@ -61,6 +61,6 @@ get_element = get_line[-1]
 sort_line = merge_sort(get_line)
 position = binary_search(sort_line, get_element, 0, len(sort_line)-1)
 if position == 0:
-    print("Введённое значение меньше чем любое число в последовательности!")
+    print("Введённое значение меньше или равно №1 элемента в последовательности !")
 else:
     print(f"Позиция элемента, ближайшего меньшего значения из последовательности к введёному числу, №{position}.")
