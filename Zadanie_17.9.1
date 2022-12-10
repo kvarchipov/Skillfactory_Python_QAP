@@ -59,4 +59,8 @@ def binary_search(array, element, left, right):
 get_line = get_user_input()
 get_element = get_line[-1]
 sort_line = merge_sort(get_line)
-print(binary_search(sort_line, get_element, 0, len(sort_line)-1))
+position = binary_search(sort_line, get_element, 0, len(sort_line)-1)
+if position == 0:
+    print("Введённое значение меньше чем любое число в последовательности!")
+else:
+    print(f"Позиция элемента, ближайшего меньшего значения из последовательности к введёному числу, №{position}.")
